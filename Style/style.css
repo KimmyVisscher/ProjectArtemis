@@ -1,0 +1,105 @@
+@font-face 
+{
+    font-family: "customFont";
+    src: url("./font/RocknRoll_One/RocknRollOne-Regular.ttf");
+}
+
+*
+{
+    font-family: 'customFont';
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+#mainContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+header
+{
+    grid-column: 1/7;
+}
+
+.upperBar
+{ 
+    background-color: #2A3D4B;
+    height: 8vh;
+}
+
+.lowerBar
+{
+    background-color: #6e949499;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+}
+
+.heroBanner
+{
+    grid-column: 2/6;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.heroText
+{
+    border: #C8AB8B 1px solid;
+    border-radius: 20px;
+    height: 10vh;
+    background-color: #C8AB8B;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroNumber
+{
+    grid-column: 3/5;
+    border: #C8AB8B 1px solid;
+    border-radius: 10px;
+    height: 4vh;
+    background-color: #C8AB8B;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+main
+{
+    grid-column: 2/6;
+    margin-top: 10vh;
+}
+
+.imageBoxes
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px; 
+}
+
+.imageBoxes > img
+{
+    height: 40vh;
+    width: 20vw;
+    background-color: #C8AB8B;
+    border-radius: 20px;
+}
+
+footer
+{
+    grid-column: 1/7;
+    margin-top: 10vh;
+}
