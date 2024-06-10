@@ -103,3 +103,40 @@ footer
     grid-column: 1/7;
     margin-top: 10vh;
 }
+
+/* Media Query voor telefoon */
+@media (max-width: 600px) {
+    #mainContainer {
+        grid-template-columns: 1fr;
+    }
+
+    header, .heroBanner, .heroNumber, main, footer {
+        grid-column: 1/2;
+    }
+
+    .upperBar, .lowerBar {
+        height: 10vh;
+    }
+
+    .heroText, .heroNumber {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heroText {
+        height: auto;
+        padding: 10px;
+        font-size: larger;
+    }
+
+    .heroNumber {
+        height: auto;
+        font-size: larger;
+    }
+
+    .imageBoxes > img {
+        width: 80vw;
+        height: auto;
+    }
+}
